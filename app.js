@@ -11,8 +11,8 @@ const server = http.createServer(function(req, res) {
     } else {
       res.write(data)
     }
+    res.end()
   })
-  res.end()
 })
 
 server.listen(port, function(error) {
@@ -22,3 +22,4 @@ server.listen(port, function(error) {
     console.log('⚡️ Server is listening on port ' + port)
   }
 })
+
